@@ -43,8 +43,11 @@ function lapseRateAdjust(tempC, fromAlt, toAlt) {
 
 // --- 1. Fetch AWS TXT and pick closest to top of hour ---
 async function readAWS() {
-  const now = new Date();
-  now.setMinutes(0,0,0); // top of the current hour
+  const target = new Date();
+  target.setUTCHours(target.getUTCHours() - 1);
+  target.setUTCMinutes(48, 0, 0);
+
+  const MAX_DIFF_MS = 20 * 60 * 1000; // +/-20 min tolerance
 
   const res = await fetch(AWS_URL);
   if (!res.ok) throw new Error(`AWS fetch error: ${res.status}`);
@@ -72,7 +75,7 @@ async function readAWS() {
     const wind_dir = degToCardinal(windDirDeg);
 
     // Build full UTC date
-    const year = now.getUTCFullYear();
+    const year = target.getUTCFullYear();
     const date = new Date(Date.UTC(year,0,1,0,0,0));
     date.setUTCDate(day);
     const hours = Math.floor(time/100);
@@ -80,8 +83,9 @@ async function readAWS() {
     date.setUTCHours(hours);
     date.setUTCMinutes(minutes);
 
-    const diff = Math.abs(now - date);
-    if (diff < minDiff) {
+    const diff = Math.abs(date - target);
+
+    if (diff < MAX_DIFF_MS && diff < minDiff) {
       minDiff = diff;
       closest = {
         timestamp: date.toISOString(),
@@ -91,6 +95,11 @@ async function readAWS() {
         wind_dir
       };
     }
+  }
+
+  if (!closest) {
+    console.log("No suitable :48 reading yet — likely not published");
+    return null;
   }
 
   return closest;
