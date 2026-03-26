@@ -1,0 +1,35 @@
+name: Snow Model
+
+on:
+  schedule:
+    - cron: '25 * * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run snow model
+        env:
+          METOFFICE_API_KEY: ${{ secrets.METOFFICE_API_KEY }}
+        run: node external-scripting/awsMetSnow.js
+
+      - name: Commit updated conditions.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add json/conditions.json
+          git diff --cached --quiet || git commit -m "snow update $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          git push
