@@ -1,182 +1,6 @@
 {
   "conditions": [
     {
-      "timestamp": "2026-03-29T18:48:00.000Z",
-      "source": "aws+metoffice",
-      "snow": {
-        "summit": {
-          "base": 98.2,
-          "fresh_1h": 0.4,
-          "fresh_24h": 12.6
-        },
-        "mid": {
-          "base": 36.2,
-          "fresh_1h": 0.3,
-          "fresh_24h": 5.4
-        },
-        "base": {
-          "base": 1.5,
-          "fresh_1h": 0.1,
-          "fresh_24h": 2.2
-        }
-      },
-      "weather": {
-        "summit": {
-          "temp_c": -4.7780000000000005,
-          "wind_kmh": 45.1,
-          "wind_dir": "NW",
-          "precip_mm": 0.3,
-          "weatherCode": 1
-        },
-        "mid": {
-          "temp_c": -1.7555000000000005,
-          "wind_kmh": 40.6,
-          "wind_dir": "NW",
-          "precip_mm": 0.2,
-          "weatherCode": 1
-        },
-        "base": {
-          "temp_c": -0.8780000000000006,
-          "wind_kmh": 31.6,
-          "wind_dir": "NW",
-          "precip_mm": 0.2,
-          "weatherCode": 1
-        }
-      }
-    },
-    {
-      "timestamp": "2026-03-29T19:48:00.000Z",
-      "source": "aws+metoffice",
-      "snow": {
-        "summit": {
-          "base": 98.3,
-          "fresh_1h": 0.1,
-          "fresh_24h": 12.7
-        },
-        "mid": {
-          "base": 36.2,
-          "fresh_1h": 0,
-          "fresh_24h": 5.4
-        },
-        "base": {
-          "base": 1.5,
-          "fresh_1h": 0,
-          "fresh_24h": 2.2
-        }
-      },
-      "weather": {
-        "summit": {
-          "temp_c": -4.3145,
-          "wind_kmh": 37.7,
-          "wind_dir": "NW",
-          "precip_mm": 0.1,
-          "weatherCode": 1
-        },
-        "mid": {
-          "temp_c": -1.2919999999999998,
-          "wind_kmh": 33.9,
-          "wind_dir": "NW",
-          "precip_mm": 0,
-          "weatherCode": 1
-        },
-        "base": {
-          "temp_c": -0.41449999999999987,
-          "wind_kmh": 26.4,
-          "wind_dir": "NW",
-          "precip_mm": 0,
-          "weatherCode": 1
-        }
-      }
-    },
-    {
-      "timestamp": "2026-03-29T20:48:00.000Z",
-      "source": "aws+metoffice",
-      "snow": {
-        "summit": {
-          "base": 98.3,
-          "fresh_1h": 0,
-          "fresh_24h": 12.7
-        },
-        "mid": {
-          "base": 36.2,
-          "fresh_1h": 0,
-          "fresh_24h": 5.4
-        },
-        "base": {
-          "base": 1.5,
-          "fresh_1h": 0,
-          "fresh_24h": 2.2
-        }
-      },
-      "weather": {
-        "summit": {
-          "temp_c": -4.1245,
-          "wind_kmh": 35.8,
-          "wind_dir": "WNW",
-          "precip_mm": 0,
-          "weatherCode": 1
-        },
-        "mid": {
-          "temp_c": -1.1020000000000003,
-          "wind_kmh": 32.2,
-          "wind_dir": "WNW",
-          "precip_mm": 0,
-          "weatherCode": 1
-        },
-        "base": {
-          "temp_c": -0.22450000000000037,
-          "wind_kmh": 25.1,
-          "wind_dir": "WNW",
-          "precip_mm": 0,
-          "weatherCode": 1
-        }
-      }
-    },
-    {
-      "timestamp": "2026-03-29T21:48:00.000Z",
-      "source": "aws+metoffice",
-      "snow": {
-        "summit": {
-          "base": 98.6,
-          "fresh_1h": 0.4,
-          "fresh_24h": 13.1
-        },
-        "mid": {
-          "base": 36.6,
-          "fresh_1h": 0.4,
-          "fresh_24h": 5.8
-        },
-        "base": {
-          "base": 1.7,
-          "fresh_1h": 0.2,
-          "fresh_24h": 2.4
-        }
-      },
-      "weather": {
-        "summit": {
-          "temp_c": -5.0600000000000005,
-          "wind_kmh": 38,
-          "wind_dir": "WNW",
-          "precip_mm": 0.3,
-          "weatherCode": 1
-        },
-        "mid": {
-          "temp_c": -2.0375000000000005,
-          "wind_kmh": 34.2,
-          "wind_dir": "WNW",
-          "precip_mm": 0.3,
-          "weatherCode": 1
-        },
-        "base": {
-          "temp_c": -1.1600000000000006,
-          "wind_kmh": 26.6,
-          "wind_dir": "WNW",
-          "precip_mm": 0.3,
-          "weatherCode": 1
-        }
-      }
-    },
-    {
       "timestamp": "2026-03-29T22:48:00.000Z",
       "source": "aws+metoffice",
       "snow": {
@@ -612,6 +436,50 @@
           "wind_kmh": 25.2,
           "wind_dir": "NW",
           "precip_mm": 0.1,
+          "weatherCode": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2026-03-30T22:48:00.000Z",
+      "source": "aws+metoffice",
+      "snow": {
+        "summit": {
+          "base": 101.3,
+          "fresh_1h": 0,
+          "fresh_24h": 3.3
+        },
+        "mid": {
+          "base": 35.9,
+          "fresh_1h": 0,
+          "fresh_24h": 1.9
+        },
+        "base": {
+          "base": 0,
+          "fresh_1h": 0,
+          "fresh_24h": 0.8
+        }
+      },
+      "weather": {
+        "summit": {
+          "temp_c": -0.601,
+          "wind_kmh": 29.4,
+          "wind_dir": "NW",
+          "precip_mm": 0,
+          "weatherCode": 1
+        },
+        "mid": {
+          "temp_c": 2.4215,
+          "wind_kmh": 26.5,
+          "wind_dir": "NW",
+          "precip_mm": 0,
+          "weatherCode": 1
+        },
+        "base": {
+          "temp_c": 3.299,
+          "wind_kmh": 20.6,
+          "wind_dir": "NW",
+          "precip_mm": 0,
           "weatherCode": 1
         }
       }
