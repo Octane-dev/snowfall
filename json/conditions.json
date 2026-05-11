@@ -439,6 +439,50 @@
           "weatherCode": 1
         }
       }
+    },
+    {
+      "timestamp": "2026-05-10T23:48:00.000Z",
+      "source": "aws+metoffice",
+      "snow": {
+        "summit": {
+          "base": 0.3,
+          "fresh_1h": 0.2,
+          "fresh_24h": 0.5
+        },
+        "mid": {
+          "base": 0.1,
+          "fresh_1h": 0.1,
+          "fresh_24h": 0.1
+        },
+        "base": {
+          "base": 0,
+          "fresh_1h": 0.1,
+          "fresh_24h": 0.1
+        }
+      },
+      "weather": {
+        "summit": {
+          "temp_c": -3.5730000000000004,
+          "wind_kmh": 20.9,
+          "wind_dir": "N",
+          "precip_mm": 0.2,
+          "weatherCode": 1
+        },
+        "mid": {
+          "temp_c": -0.5505000000000004,
+          "wind_kmh": 18.8,
+          "wind_dir": "N",
+          "precip_mm": 0.2,
+          "weatherCode": 1
+        },
+        "base": {
+          "temp_c": 0.3269999999999995,
+          "wind_kmh": 14.6,
+          "wind_dir": "N",
+          "precip_mm": 0.2,
+          "weatherCode": 1
+        }
+      }
     }
   ]
 }
