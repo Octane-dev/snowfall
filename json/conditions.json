@@ -1,50 +1,6 @@
 {
   "conditions": [
     {
-      "timestamp": "2026-08-20T15:48:00.000Z",
-      "source": "aws+metoffice",
-      "snow": {
-        "summit": {
-          "base": 0,
-          "fresh_1h": 0,
-          "fresh_24h": 0
-        },
-        "mid": {
-          "base": 0,
-          "fresh_1h": 0,
-          "fresh_24h": 0
-        },
-        "base": {
-          "base": 0,
-          "fresh_1h": 0,
-          "fresh_24h": 0
-        }
-      },
-      "weather": {
-        "summit": {
-          "temp_c": 4.482,
-          "wind_kmh": 15.5,
-          "wind_dir": "N",
-          "precip_mm": 1,
-          "weatherCode": 1
-        },
-        "mid": {
-          "temp_c": 7.5045,
-          "wind_kmh": 14,
-          "wind_dir": "N",
-          "precip_mm": 0.6,
-          "weatherCode": 1
-        },
-        "base": {
-          "temp_c": 8.382,
-          "wind_kmh": 10.9,
-          "wind_dir": "N",
-          "precip_mm": 0.6,
-          "weatherCode": 1
-        }
-      }
-    },
-    {
       "timestamp": "2026-08-20T18:48:00.000Z",
       "source": "aws+metoffice",
       "snow": {
@@ -610,6 +566,50 @@
         "base": {
           "temp_c": 9.1965,
           "wind_kmh": 6.4,
+          "wind_dir": "NNW",
+          "precip_mm": 0,
+          "weatherCode": 1
+        }
+      }
+    },
+    {
+      "timestamp": "2026-08-21T16:48:00.000Z",
+      "source": "aws+metoffice",
+      "snow": {
+        "summit": {
+          "base": 0,
+          "fresh_1h": 0,
+          "fresh_24h": 0
+        },
+        "mid": {
+          "base": 0,
+          "fresh_1h": 0,
+          "fresh_24h": 0
+        },
+        "base": {
+          "base": 0,
+          "fresh_1h": 0,
+          "fresh_24h": 0
+        }
+      },
+      "weather": {
+        "summit": {
+          "temp_c": 5.2204999999999995,
+          "wind_kmh": 12.7,
+          "wind_dir": "NNW",
+          "precip_mm": 0,
+          "weatherCode": 1
+        },
+        "mid": {
+          "temp_c": 8.242999999999999,
+          "wind_kmh": 11.4,
+          "wind_dir": "NNW",
+          "precip_mm": 0,
+          "weatherCode": 1
+        },
+        "base": {
+          "temp_c": 9.1205,
+          "wind_kmh": 8.9,
           "wind_dir": "NNW",
           "precip_mm": 0,
           "weatherCode": 1
